@@ -1,0 +1,140 @@
+:root {
+  --light: #f9e0ae;
+  --orange: #fc8621;
+  --darkOrange: #c24914;
+  --brown: #682c0e;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  color: var(--brown);
+  background-color: var(--light);
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+  /* box-shadow: 0 0 80px 5px var(--brown) inset; */
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* Header + note creation */
+.header {
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.noteTitle {
+  padding: 4px 8px;
+  border-radius: 10px;
+  color: inherit;
+  background-color: var(--light);
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+  border: 1px solid var(--brown);
+  box-shadow: 0 0 10px 1px var(--darkOrange) inset;
+}
+::placeholder {
+  color: var(--brown);
+}
+
+.noteContent {
+  padding: 8px;
+  margin: 10px 0 5px;
+  border-radius: 10px;
+  color: inherit;
+  background-color: var(--light);
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+  border: 1px solid var(--brown);
+  box-shadow: 0 0 20px 1px var(--darkOrange) inset;
+}
+
+.addNoteBtn {
+  padding: 4px 10px;
+  border-radius: 10px;
+  /* color: var(--light); */
+  border: 1px solid var(--brown);
+  background-color: var(--light);
+  box-shadow: 0 0 10px 2px var(--darkOrange) inset;
+  transition: 0.2s;
+}
+.addNoteBtn:hover {
+box-shadow: 0 0 5px 1px var(--darkOrange);
+}
+
+/* Notes Style*/
+.div-note {
+  text-align: left;
+  min-height: 120px;
+  width: 340px;
+  margin: 2px auto;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: var(--light);
+  box-shadow: 0 0 20px 1px var(--darkOrange) inset;
+  transition: 0.001s;
+}
+
+.div-delete-btn {
+  float: right;
+}
+
+.delete-img {
+  height: 22px;
+  width: 22px;
+  transition: 0.2s;
+}
+
+.delete-img:hover {
+  transform: scale(1.2);
+}
+
+.div-title {
+  /* display: inline-block; */
+  font-size: 18px;
+  font-weight: bold;
+  pointer-events: none;
+  user-select: none;
+  word-wrap: break-word;
+}
+
+.note-hr {
+  border: none;
+  border-top: 1px solid var(--darkOrange);
+  pointer-events: none;
+}
+
+.div-content {
+  font-size: 14px;
+  pointer-events: none;
+  user-select: none;
+  word-wrap: break-word;
+}
+
+/* Guide */
+.guide {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  padding: 0 20px 20px 0;
+  text-align: left;
+  opacity: 0.5;
+  z-index: -1;
+}
+.guide h2{
+  margin: 0;
+}
+
+.guide-list {
+  margin: 0;
+  padding: 0;
+}
